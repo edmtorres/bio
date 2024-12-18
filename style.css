@@ -8,7 +8,13 @@ body {
   color: #4335A7; /* Deep Blue Text */
 }
 
-h1, h2 {
+header h1 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for more contrast */
+}
+
+h2 {
   font-weight: 600;
   color: #4335A7; /* Deep Blue */
 }
