@@ -19,9 +19,10 @@ function loadAboutText() {
   fetch('about.txt')
     .then(response => response.text())  // Parse the file as text
     .then(staticContent => {
-      // Set the static content in the about section
+      // Format the content with paragraph tags for each line break
+      const formattedStaticContent = formatText(staticContent);
       const staticTextElement = document.getElementById("static-text");
-      staticTextElement.innerHTML = staticContent;
+      staticTextElement.innerHTML = formattedStaticContent;
     })
     .catch(error => console.error("Error loading static text:", error));
 
@@ -29,10 +30,18 @@ function loadAboutText() {
   fetch('about-readmore.txt')
     .then(response => response.text())  // Parse the file as text
     .then(expandableContent => {
+      // Format the content with paragraph tags for each line break
+      const formattedExpandableContent = formatText(expandableContent);
       const moreTextElement = document.getElementById("more-text");
-      moreTextElement.innerHTML = expandableContent;  // Set the full content hidden initially
+      moreTextElement.innerHTML = formattedExpandableContent;  // Set the full content hidden initially
     })
     .catch(error => console.error("Error loading expandable text:", error));
+}
+
+// Function to replace newline characters with <p> tags for paragraphs or <br> for line breaks
+function formatText(text) {
+  // Split the text by newline characters and wrap each paragraph in <p> tags
+  return text.split('\n').map(line => `<p>${line}</p>`).join('');
 }
 
 // Toggle the visibility of the extra text
