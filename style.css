@@ -1,51 +1,138 @@
+/* General Styling */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
   margin: 0;
   padding: 0;
-  background: #f4f4f9;
-  color: #333;
+  background: #f8f9fa;
+  color: #343a40;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
+h1, h2 {
+  font-weight: 600;
+  color: #212529;
 }
 
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
+a {
+  color: #007bff;
   text-decoration: none;
 }
 
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
 
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  font-size: 1.2em;
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+
+/* Section Styling */
+section {
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+}
+
+section p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+/* Footer Styling */
 footer {
   text-align: center;
-  padding: 10px;
-  background: #333;
+  padding: 15px 0;
+  background: #343a40;
+  color: #f8f9fa;
+  margin-top: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+  background: #007bff;
   color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header nav ul li a {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 20px;
+  }
 }
 
