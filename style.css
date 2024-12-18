@@ -136,3 +136,14 @@ button:hover {
   }
 }
 
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  border: 2px solid #333; /* Adds a border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  display: block;
+  margin: 10px auto; /* Centers the image */
+}
+
+
