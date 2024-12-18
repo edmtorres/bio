@@ -140,6 +140,19 @@
   <!-- Link to JavaScript file -->
   <script src="script.js"></script>
 
+  <script>
+    // Wait for the document to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuIcon = document.querySelector('.menu-icon'); // Get the menu icon
+      const navMenu = document.querySelector('header nav ul'); // Get the navigation menu
+
+      // Add a click event listener to the menu icon
+      menuIcon.addEventListener('click', function() {
+        navMenu.classList.toggle('active'); // Toggle the 'active' class on the nav menu
+      });
+    });
+  </script>
+
 
 </body>
 </html>

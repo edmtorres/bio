@@ -47,12 +47,20 @@ a:hover {
 }
 
 header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0 0 0;
-  display: flex;
-  justify-content: center;
+  display: none; /* Hide the menu by default */
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--deep-blue);
+  position: absolute;
+  top: 3em;
+  left: 0;
+  text-align: center;
 }
+
+header nav ul.active {
+  display: flex; /* Show the menu when 'active' class is added */
+}
+
 
 header nav ul li {
   margin: 0 15px;
@@ -133,7 +141,7 @@ section p {
 
 
 /* Apply body styles to About Me and Projects sections */
-about-text, #projects-text, #about-more-text, #projects-more-text {
+#about-text, #projects-text, #about-more-text, #projects-more-text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   color: var(--deep-blue); /* Ensure the text color is consistent */
@@ -265,6 +273,7 @@ button:hover {
   padding: 20px;
   background-color: #FFF6E9;
   border-radius: 8px;
+  overflow: auto;
 }
 
 #publications h2 {
