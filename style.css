@@ -242,3 +242,16 @@ button:hover {
   display: none;
 }
 
+
+#contact a img {
+  width: 30px; /* Adjust the width of the icons */
+  height: 30px; /* Maintain aspect ratio by setting the height */
+  margin-right: 10px; /* Add some space between the icons */
+  transition: transform 0.3s ease; /* Optional: Add a hover effect */
+}
+
+#contact a img:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+
