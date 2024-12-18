@@ -11,7 +11,7 @@ body {
 header h1 {
   font-size: 2.5em;
   margin: 0.5em 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for more contrast */
+  text-shadow: 2px 2px 4px #4335A7; /* Add shadow for more contrast */
 }
 
 h2 {
