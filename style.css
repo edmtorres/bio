@@ -23,6 +23,7 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* Header Styling */
 header {
   background: linear-gradient(135deg, #6c757d, #495057);
@@ -41,10 +42,11 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 1em 0 0 0;
+  display: flex; /* Use flex to make the items appear side by side */
+  justify-content: center; /* Centers the items horizontally */
 }
 
 header nav ul li {
-  display: inline;
   margin: 0 15px;
 }
 
@@ -57,6 +59,7 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #ffc107;
 }
+
 
 /* Section Styling */
 section {
