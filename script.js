@@ -12,17 +12,6 @@ toggleButton.addEventListener('click', () => {
   }
 });
 
-
-// Function to load content from a file and display it in a specific element
-function loadContent(file, elementId) {
-  fetch(file)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(elementId).textContent = data;
-    })
-    .catch(error => console.error('Error loading the file:', error));
-}
-
 // Function to load content from a file and display it in a specific element
 function loadContent(file, elementId) {
   fetch(file)
@@ -69,10 +58,8 @@ document.getElementById('read-more-projects-btn').addEventListener('click', func
   }
 });
 
-
 // Toggle the navigation menu on click
 document.getElementById('menu-icon').addEventListener('click', function() {
   const navList = document.getElementById('nav-list');
   navList.classList.toggle('active');
 });
-
