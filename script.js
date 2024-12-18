@@ -13,50 +13,46 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-// Function to load the static content from about.txt and expandable content from about-readmore.txt
-function loadAboutText() {
-  // Fetch the static content from about.txt
-  fetch('about.txt')
-    .then(response => response.text())  // Parse the file as text
-    .then(staticContent => {
-      // Format the content with paragraph tags for each line break
-      const formattedStaticContent = formatText(staticContent);
-      const staticTextElement = document.getElementById("static-text");
-      staticTextElement.innerHTML = formattedStaticContent;
+// Function to load content from a file and display it in a specific element
+function loadContent(file, elementId) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(elementId).textContent = data;
     })
-    .catch(error => console.error("Error loading static text:", error));
-
-  // Fetch the expandable content from about-readmore.txt
-  fetch('about-readmore.txt')
-    .then(response => response.text())  // Parse the file as text
-    .then(expandableContent => {
-      // Format the content with paragraph tags for each line break
-      const formattedExpandableContent = formatText(expandableContent);
-      const moreTextElement = document.getElementById("more-text");
-      moreTextElement.innerHTML = formattedExpandableContent;  // Set the full content hidden initially
-    })
-    .catch(error => console.error("Error loading expandable text:", error));
+    .catch(error => console.error('Error loading the file:', error));
 }
 
-// Function to replace newline characters with <p> tags for paragraphs or <br> for line breaks
-function formatText(text) {
-  // Split the text by newline characters and wrap each paragraph in <p> tags
-  return text.split('\n').map(line => `<p>${line}</p>`).join('');
-}
+// Load content for both About Me and Projects sections when the page is loaded
+window.onload = function() {
+  // About Me section
+  loadContent('text/about.txt', 'about-text');
+  loadContent('text/about-readmore.txt', 'about-more-text');
+  
+  // Projects section
+  loadContent('text/project.txt', 'projects-text');
+  loadContent('text/project-readmore.txt', 'projects-more-text');
+};
 
-// Toggle the visibility of the extra text
-function toggleText() {
-  const moreText = document.getElementById("more-text");
-  const btn = document.getElementById("read-more-btn");
-
-  if (moreText.style.display === "none") {
-    moreText.style.display = "inline";
-    btn.innerHTML = "Read Less";
+// Toggle Read More functionality for both About Me and Projects sections
+document.getElementById('read-more-about-btn').addEventListener('click', function() {
+  var moreText = document.getElementById('more-about-text');
+  if (moreText.style.display === 'none') {
+    moreText.style.display = 'block';
+    this.textContent = 'Read Less';
   } else {
-    moreText.style.display = "none";
-    btn.innerHTML = "Read More";
+    moreText.style.display = 'none';
+    this.textContent = 'Read More';
   }
-}
+});
 
-// Load the content when the page is loaded
-window.onload = loadAboutText;
+document.getElementById('read-more-projects-btn').addEventListener('click', function() {
+  var moreText = document.getElementById('more-projects-text');
+  if (moreText.style.display === 'none') {
+    moreText.style.display = 'block';
+    this.textContent = 'Read Less';
+  } else {
+    moreText.style.display = 'none';
+    this.textContent = 'Read More';
+  }
+});
