@@ -4,7 +4,7 @@ const message = document.getElementById('message');
 
 // Add a click event listener to the button
 toggleButton.addEventListener('click', () => {
-  // Check if the message is currently displayed
+  // Toggle the message visibility
   if (message.style.display === 'none' || message.style.display === '') {
     message.style.display = 'block'; // Show the message
   } else {
