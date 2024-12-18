@@ -57,15 +57,3 @@ document.getElementById('read-more-projects-btn').addEventListener('click', func
     this.textContent = 'Read More';
   }
 });
-
-
-// Toggle menu off if on mobile.
-document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.querySelector('.menu-icon'); // Get the menu icon
-  const navMenu = document.querySelector('header nav ul'); // Get the navigation menu
-
-  // Add a click event listener to the menu icon
-  menuIcon.addEventListener('click', function() {
-    navMenu.classList.toggle('active'); // Toggle the 'active' class on the nav menu
-  });
-});

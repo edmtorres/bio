@@ -47,27 +47,25 @@ a:hover {
 }
 
 header nav ul {
-  display: none; /* Hide the menu by default */
-  flex-direction: column;
+  display: flex;
+  flex-direction: row; /* Default layout: horizontal for desktop */
   width: 100%;
-  background-color: var(--deep-blue);
-  position: absolute;
-  top: 3em;
-  left: 0;
-  text-align: center;
-}
-
-header nav ul.active {
-  display: flex; /* Show the menu when 'active' class is added */
+  background-color: transparent;
+  position: static;
+  justify-content: center; /* Center navigation items */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 header nav ul li {
-  margin: 20px 0;
+  margin: 0 15px; /* Spacing between menu items */
 }
 
 header nav ul li a {
   font-size: 1.2em;
   color: var(--light-cream);
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -75,23 +73,28 @@ header nav ul li a:hover {
   color: var(--orange);
 }
 
-@media screen and (min-width: 769px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   header nav ul {
-    display: flex; /* Show menu by default for larger screens */
-    flex-direction: row;
-    position: static;
-    background-color: transparent;
-    text-align: left;
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+    background-color: var(--deep-blue);
+    text-align: center;
   }
 
   header nav ul li {
-    margin: 0 15px;
+    margin: 10px 0; /* Adjust spacing for vertical layout */
   }
 
   header nav ul li a {
-    font-size: 1em;
+    font-size: 1.5em; /* Larger text for better readability */
   }
 }
+
+/* Remove any remnants of the hamburger menu */
+.menu-icon {
+  display: none; /* Ensure hamburger icon is not visible */
+}
+
 
 
 /* Section Styling */
