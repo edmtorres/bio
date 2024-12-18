@@ -235,17 +235,17 @@ button:hover {
   display: none;
 }
 
-.social-media {
+#social-media {
   display: flex;
   align-items: center;
   gap: 10px; /* Space between the icons */
 }
 
-.social-media a {
+#social-media a {
   display: inline-block;
 }
 
-.social-media img {
+#social-media img {
   width: 60px; /* Set a smaller size for the icons */
   height: auto;
 }
