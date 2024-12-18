@@ -191,7 +191,7 @@ button:hover {
   width: 250px;
   height: 250px;
   border-radius: 50%; /* Makes the image circular */
-  border: 6px solid #4335A7; /* Deep Blue Border */
+  border: 5px solid #4335A7; /* Deep Blue Border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
   display: block;
   margin: 10px auto; /* Centers the image */
