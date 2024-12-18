@@ -23,6 +23,18 @@ function loadContent(file, elementId) {
     .catch(error => console.error('Error loading the file:', error));
 }
 
+// Function to load content from a file and display it in a specific element
+function loadContent(file, elementId) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      // Convert newlines to <br> for HTML formatting
+      const formattedData = data.replace(/\n/g, '<br>');
+      document.getElementById(elementId).innerHTML = formattedData;
+    })
+    .catch(error => console.error('Error loading the file:', error));
+}
+
 // Load content for both About Me and Projects sections when the page is loaded
 window.onload = function() {
   // About Me section
