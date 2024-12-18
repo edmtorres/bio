@@ -314,3 +314,32 @@ button:hover {
   width: 100px;
   height: auto;
 }
+
+
+/* Style for the image in the Read More section */
+#read-more-img {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Adjust max width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 20px auto; /* Center the image */
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+/* Optional: Style the button for better interaction */
+#read-more-btn {
+  background-color: #4335A7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+#read-more-btn:hover {
+  background-color: #80C4E9;
+}
+
