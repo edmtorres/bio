@@ -92,6 +92,13 @@ section p {
   line-height: 1.8;
 }
 
+
+/* Justify the text for About Me and Projects sections */
+#about-text, #projects-text, #about-more-text, #projects-more-text {
+  text-align: justify;
+}
+
+
 /* Footer Styling */
 footer {
   background-color: #4335A7; /* Deep Blue Footer */
