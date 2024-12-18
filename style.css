@@ -4,30 +4,29 @@ body {
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
-  color: #343a40;
+  background: #FFF6E9; /* Light Cream Background */
+  color: #4335A7; /* Deep Blue Text */
 }
 
 h1, h2 {
   font-weight: 600;
-  color: #212529;
+  color: #4335A7; /* Deep Blue */
 }
 
 a {
-  color: #007bff;
+  color: #FF7F3E; /* Orange Links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #4335A7; /* Deep Blue on Hover */
   text-decoration: underline;
 }
 
-
 /* Header Styling */
 header {
-  background: linear-gradient(135deg, #6c757d, #495057);
-  color: #fff;
+  background: linear-gradient(135deg, #4335A7, #80C4E9); /* Deep Blue to Light Blue */
+  color: #FFF6E9; /* Light Cream Text */
   padding: 2em 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -52,21 +51,20 @@ header nav ul li {
 
 header nav ul li a {
   font-size: 1.2em;
-  color: #f8f9fa;
+  color: #FFF6E9; /* Light Cream Links */
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #ffc107;
+  color: #FF7F3E; /* Orange on Hover */
 }
-
 
 /* Section Styling */
 section {
   padding: 30px 20px;
   margin: 20px auto;
   max-width: 900px;
-  background: #fff;
+  background: #FFF6E9; /* Light Cream Background */
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
@@ -74,7 +72,7 @@ section {
 section h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  border-bottom: 3px solid #007bff;
+  border-bottom: 3px solid #4335A7; /* Deep Blue Border */
   display: inline-block;
 }
 
@@ -86,8 +84,8 @@ section p {
 
 /* Footer Styling */
 footer {
-  background-color: #2c3e50;
-  color: #ecf0f1;
+  background-color: #4335A7; /* Deep Blue Footer */
+  color: #FFF6E9; /* Light Cream Text */
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -116,13 +114,13 @@ ul li {
 }
 
 ul li a {
-  color: #ecf0f1;
+  color: #FFF6E9; /* Light Cream Links */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 ul li a:hover {
-  color: #3498db;
+  color: #FF7F3E; /* Orange on Hover */
 }
 
 .footer-left {
@@ -152,12 +150,10 @@ ul li a:hover {
   }
 }
 
-
-
 /* Button Styling */
 button {
-  background: #007bff;
-  color: #fff;
+  background: #FF7F3E; /* Orange Button */
+  color: #FFF6E9; /* Light Cream Text */
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -167,7 +163,7 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: #4335A7; /* Deep Blue on Hover */
 }
 
 /* Media Query for Mobile */
@@ -189,26 +185,25 @@ button:hover {
   width: 150px;
   height: 150px;
   border-radius: 50%; /* Makes the image circular */
-  border: 2px solid #333; /* Adds a border around the image */
+  border: 2px solid #4335A7; /* Deep Blue Border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
   display: block;
   margin: 10px auto; /* Centers the image */
 }
 
-
 #publications {
   margin-top: 30px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #FFF6E9; /* Light Cream Background */
   border-radius: 8px;
 }
 
 #publications h2 {
-  color: #2C3E50;
+  color: #4335A7; /* Deep Blue */
 }
 
 #publications a {
-  color: #2980B9;
+  color: #FF7F3E; /* Orange Links */
   text-decoration: none;
 }
 
@@ -216,15 +211,13 @@ button:hover {
   text-decoration: underline;
 }
 
-
-
 #about-text {
   font-size: 16px;
   line-height: 1.5;
 }
 
 #read-more-btn {
-  background-color: #3498db;
+  background-color: #4335A7; /* Deep Blue Button */
   color: white;
   border: none;
   padding: 10px 15px;
@@ -235,28 +228,24 @@ button:hover {
 }
 
 #read-more-btn:hover {
-  background-color: #2980b9;
+  background-color: #80C4E9; /* Light Blue on Hover */
 }
 
 #more-text {
   display: none;
 }
 
-
 .social-media {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between the icons */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icons */
 }
 
 .social-media a {
-    display: inline-block;
+  display: inline-block;
 }
 
 .social-media img {
-    width: 60px; /* Set a smaller size for the icons */
-    height: auto;
+  width: 30px; /* Set a smaller size for the icons */
+  height: auto;
 }
-
-
-
