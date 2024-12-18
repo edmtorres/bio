@@ -131,13 +131,9 @@ section p {
   line-height: 1.8;
 }
 
-/* Justify the text for About Me and Projects sections */
-#about-text, #projects-text, #about-more-text, #projects-more-text {
-  text-align: justify;
-}
 
-/* Apply body styles to About Me section */
-#about-text, #about-more-text {
+/* Apply body styles to About Me and Projects sections */
+about-text, #projects-text, #about-more-text, #projects-more-text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   color: var(--deep-blue); /* Ensure the text color is consistent */
