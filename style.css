@@ -21,6 +21,7 @@ header {
   padding: 2em 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 header h1 {
@@ -67,14 +68,52 @@ header nav ul li a:hover {
   color: var(--orange);
 }
 
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  cursor: pointer;
+}
 
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show the hamburger icon on mobile */
+  }
+
+  header nav ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--deep-blue);
+    position: absolute;
+    top: 3em;
+    left: 0;
+    text-align: center;
+  }
+
+  header nav ul li {
+    margin: 20px 0;
+  }
+
+  header nav ul.active {
+    display: flex; /* Show the menu when 'active' class is added */
+  }
+
+  header nav ul li a {
+    font-size: 1.5em;
+  }
+}
 
 /* Section Styling */
 section {
   padding: 30px 20px;
   margin: 20px auto;
   max-width: 900px;
-  background: #FFF6E9; /* Light Cream Background */
+  background: #FFF6E9;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
@@ -82,7 +121,7 @@ section {
 section h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  border-bottom: 3px solid #4335A7; /* Deep Blue Border */
+  border-bottom: 3px solid #4335A7;
   display: inline-block;
 }
 
@@ -92,17 +131,15 @@ section p {
   line-height: 1.8;
 }
 
-
 /* Justify the text for About Me and Projects sections */
 #about-text, #projects-text, #about-more-text, #projects-more-text {
   text-align: justify;
 }
 
-
 /* Footer Styling */
 footer {
-  background-color: #4335A7; /* Deep Blue Footer */
-  color: #FFF6E9; /* Light Cream Text */
+  background-color: #4335A7;
+  color: #FFF6E9;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -131,13 +168,13 @@ ul li {
 }
 
 ul li a {
-  color: #FFF6E9; /* Light Cream Links */
+  color: #FFF6E9;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 ul li a:hover {
-  color: #FF7F3E; /* Orange on Hover */
+  color: #FF7F3E;
 }
 
 .footer-left {
@@ -171,8 +208,8 @@ ul li a:hover {
 
 /* Button Styling */
 button {
-  background: #FF7F3E; /* Orange Button */
-  color: #FFF6E9; /* Light Cream Text */
+  background: #FF7F3E;
+  color: #FFF6E9;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -182,10 +219,9 @@ button {
 }
 
 button:hover {
-  background: #4335A7; /* Deep Blue on Hover */
+  background: #4335A7;
 }
 
-/* Media Query for Mobile */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -203,26 +239,26 @@ button:hover {
 #profile-pic {
   width: 250px;
   height: 250px;
-  border-radius: 50%; /* Makes the image circular */
-  border: 5px solid #4335A7; /* Deep Blue Border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  border-radius: 50%;
+  border: 5px solid #4335A7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: block;
-  margin: 10px auto; /* Centers the image */
+  margin: 10px auto;
 }
 
 #publications {
   margin-top: 30px;
   padding: 20px;
-  background-color: #FFF6E9; /* Light Cream Background */
+  background-color: #FFF6E9;
   border-radius: 8px;
 }
 
 #publications h2 {
-  color: #4335A7; /* Deep Blue */
+  color: #4335A7;
 }
 
 #publications a {
-  color: #FF7F3E; /* Orange Links */
+  color: #FF7F3E;
   text-decoration: none;
 }
 
@@ -236,7 +272,7 @@ button:hover {
 }
 
 #read-more-btn {
-  background-color: #4335A7; /* Deep Blue Button */
+  background-color: #4335A7;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -247,7 +283,7 @@ button:hover {
 }
 
 #read-more-btn:hover {
-  background-color: #80C4E9; /* Light Blue on Hover */
+  background-color: #80C4E9;
 }
 
 #more-text {
@@ -256,9 +292,9 @@ button:hover {
 
 .social-media {
   display: flex;
-  align-items: center; /* Vertically center the icons */
-  justify-content: center; /* Horizontally center the icons */
-  gap: 10px; /* Space between the icons */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .social-media a {
@@ -266,6 +302,6 @@ button:hover {
 }
 
 .social-media img {
-  width: 100px; /* Adjust size to 100px */
+  width: 100px;
   height: auto;
 }
