@@ -142,7 +142,7 @@ ul li a:hover {
 }
 
 .footer-right {
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
 }
 
@@ -256,6 +256,6 @@ button:hover {
 }
 
 .social-media img {
-  width: 60px; /* Adjust size to 60px */
+  width: 100px; /* Adjust size to 100px */
   height: auto;
 }
