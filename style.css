@@ -25,8 +25,8 @@ a:hover {
 
 /* Header Styling */
 header {
-  background: linear-gradient(135deg, #007bff, #0056b3); /* Change gradient to blues for better contrast */
-  color: #fff; /* Ensure text remains white for better visibility */
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: #fff;
   padding: 2em 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,19 +35,28 @@ header {
 header h1 {
   font-size: 2.5em;
   margin: 0.5em 0;
-  font-weight: bold; /* Ensure the title stands out */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
 header nav ul li a {
   font-size: 1.2em;
-  color: #fff; /* Light color for nav items */
+  color: #f8f9fa;
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #ffc107; /* Maintain the yellow hover color */
+  color: #ffc107;
 }
-
 
 /* Section Styling */
 section {
