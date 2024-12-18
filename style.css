@@ -214,3 +214,27 @@ button:hover {
 }
 
 
+
+#about-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#read-more-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+#read-more-btn:hover {
+  background-color: #2980b9;
+}
+
+#more-text {
+  display: none;
+}
