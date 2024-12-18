@@ -68,3 +68,11 @@ document.getElementById('read-more-projects-btn').addEventListener('click', func
     this.textContent = 'Read More';
   }
 });
+
+
+// Toggle the navigation menu on click
+document.getElementById('menu-icon').addEventListener('click', function() {
+  const navList = document.getElementById('nav-list');
+  navList.classList.toggle('active');
+});
+
