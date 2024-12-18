@@ -93,7 +93,7 @@ header nav ul li a:hover {
   }
 
   header nav ul {
-    display: none; /* Hide the menu by default */
+/*    display: none; /* Hide the menu by default */
     flex-direction: column;
     width: 100%;
     background-color: var(--deep-blue);
@@ -337,5 +337,7 @@ button:hover {
   transform: scale(1.1); /* Slight zoom effect when hovered */
 }
 
-
+.profile-pic:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+}
 
