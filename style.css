@@ -315,10 +315,10 @@ button:hover {
 }
 
 .read-more-img:hover {
-  transform: scale(1.1); /* Slight zoom effect when hovered */
+  transform: scale(1.3); /* Slight zoom effect when hovered */
 }
 
 .profile-pic:hover {
-  transform: scale(1.1); /* Slight zoom effect when hovered */
+  transform: scale(1.3); /* Slight zoom effect when hovered */
 }
 
