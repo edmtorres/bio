@@ -3,144 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edmundo Torres-Gonz&aacute;lez</title>
+  <title>Your Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-
-  <!-- Link to Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="style.css">
-
-
-  <header>
-  <nav>
-    <div class="logo">
-      <h1>Website for Edmundo Torres-Gonz&aacute;lez</h1>
-    </div>
-    <div class="menu-icon" id="menu-icon">
-      &#9776; <!-- Hamburger icon -->
-    </div>
-    <ul class="nav-list" id="nav-list">
+  <!-- Navigation Menu (for mobile) -->
+  <div id="menu-icon">â˜°</div>
+  <nav id="nav-list">
+    <ul>
       <li><a href="#about">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://docs.google.com/document/d/1v86IgbMIuBA0ej2XB9Kh6DA_ZVuNx_j-mG6T8q-3UhM/export?format=pdf" target="_blank" download="Edmundo_Torres-González_CV.pdf">CV</a></li>
+      <!-- Add more navigation items here -->
     </ul>
   </nav>
-</header>
 
-
-<img src="images/profile.jpg" alt="Edmundo Torres-González" id="profile-pic">
-
-
-<section id="about-me">
-  <h2>About Me</h2>
-
-  <p id="about-text"></p> <!-- This will load content from about.txt -->
-
-  <button id="read-more-about-btn">Read More</button>
-  
-  <div id="more-about-text" style="display:none;">
-    <div id="read-more-container">
-      <p id="about-more-text"></p> <!-- This will load content from about-readmore.txt -->
-      <!-- <img id="read-more-img-about" src="images/smbe2023.jpg" alt="Read more image"> -->
-      <img id="read-more-img-about" src="images/uprr-workshop.jpg" alt="Read more image">
-    </div>
-  </div>
-</section>
-
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <p id="projects-text"></p> <!-- This will load content from project.txt -->
-
-  <button id="read-more-projects-btn">Read More</button>
-
-  <div id="more-projects-text" style="display:none;">
-    <div id="read-more-container">
-      <p id="projects-more-text"></p> <!-- This will load content from project-more.txt -->
-      <img id="read-more-img-about" src="images/smbe2023.jpg" alt="Read more image">
-      <img id="read-more-img-projects" src="images/smbe2024.jpg" alt="Read more image">
-    </div>
-  </div>
-</section>
-
-
-
-  <section id="publications">
-    <h2>Publications</h2>
-    <p>For a complete list of my academic publications, visit my <a href="https://scholar.google.com/citations?user=VARv-L4AAAAJ" target="_blank">Google Scholar profile</a>.</p>
-    <p>Check out my projects on <a href="https://github.com/edmtorres" target="_blank">GitHub</a>.</p>
-    <div class="social-media">
-      <a href="https://scholar.google.com/citations?user=VARv-L4AAAAJ" target="_blank">
-            <img src="images/scholar-icon.png" alt="Google Scholar" />
-        </a>
-        <a href="https://github.com/edmtorres" target="_blank">
-            <img src="images/github-icon.png" alt="Github" />
-        </a>
-        <a href="https://orcid.org/0000-0001-8844-2855" target="_blank">
-            <img src="images/orcid-icon.png" alt="ORCID" />
-        </a>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div id="about-text"></div>
+    <button id="read-more-about-btn">Read More</button>
+    <div id="more-about-text" style="display:none;"></div>
   </section>
 
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p> You can reach me on the following platforms:<p>
-    <div class="social-media">
-        <a href="mailto:edmundotogo@gmail.com">
-            <img src="images/gmail-icon.png" alt="Mail" />
-        </a>
-        <a href="https://x.com/edmundotogo" target="_blank">
-            <img src="images/twitter-icon.png" alt="Twitter" />
-        </a>
-        <a href="https://www.linkedin.com/in/edmundotogo/" target="_blank">
-            <img src="images/linkedin-icon.png" alt="LinkedIn" />
-        </a>
-    </div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="projects-text"></div>
+    <button id="read-more-projects-btn">Read More</button>
+    <div id="more-projects-text" style="display:none;"></div>
   </section>
 
+  <!-- Message Toggle Section (for other functionality) -->
+  <button id="toggleButton">Toggle Message</button>
+  <div id="message" style="display:none;">This is a hidden message!</div>
 
-
-
-  <!-- Click me button and message -->
-  <button id="toggleButton">Click Me</button>
-  <div id="message" style="display: none;">
-    <p>Have a surprisingly great day! :)</p>
-  </div>
-
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-left">
-        <p>&copy; 2024 Edmundo Torres-Gonz&aacute;lez</p>
-        <!-- <p>Bioinformatics & Genomics PhD Student</p> -->
-      </div>
-      <div class="footer-center">
-        <ul>
-          <li><a href="mailto:edmundo@example.com">Email</a></li>
-          <li><a href="https://x.com/edmundotogo" target="_blank">Twitter</a></li>
-          <li><a href="https://www.linkedin.com/in/edmundotogo" target="_blank">LinkedIn</a></li>
-          <li><a href="https://scholar.google.com/citations?user=youruserid" target="_blank">Google Scholar</a></li>
-          <li><a href="https://github.com/edmtorres" target="_blank">Github</a></li>
-          <li><a href="https://orcid.org/0000-0001-8844-2855" target="_blank">ORCID</a></li>
-        </ul>
-      </div>
-      <div class="footer-right">
-        <p>Connect with me for collaborations, research, and more!</p>
-      </div>
-    </div>
-  </footer>
-
-
-
-  <!-- Link to JavaScript file -->
   <script src="script.js"></script>
-
-
 </body>
 </html>
-
