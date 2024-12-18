@@ -36,16 +36,24 @@ window.onload = function() {
 };
 
 // Toggle Read More functionality for both About Me and Projects sections
-const readMoreAboutBtn = document.getElementById('read-more-about-btn');
-if (readMoreAboutBtn) {
-  readMoreAboutBtn.addEventListener('click', function() {
-    var moreText = document.getElementById('more-about-text');
-    if (moreText.style.display === 'none') {
-      moreText.style.display = 'block';
-      this.textContent = 'Read Less';
-    } else {
-      moreText.style.display = 'none';
-      this.textContent = 'Read More';
-    }
-  });
-}
+document.getElementById('read-more-about-btn').addEventListener('click', function() {
+  var moreText = document.getElementById('more-about-text');
+  if (moreText.style.display === 'none') {
+    moreText.style.display = 'block';
+    this.textContent = 'Read Less';
+  } else {
+    moreText.style.display = 'none';
+    this.textContent = 'Read More';
+  }
+});
+
+document.getElementById('read-more-projects-btn').addEventListener('click', function() {
+  var moreText = document.getElementById('more-projects-text');
+  if (moreText.style.display === 'none') {
+    moreText.style.display = 'block';
+    this.textContent = 'Read Less';
+  } else {
+    moreText.style.display = 'none';
+    this.textContent = 'Read More';
+  }
+});
