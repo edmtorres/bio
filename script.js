@@ -13,17 +13,29 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-// Fetch the content from the about.txt file
-fetch('about.txt')
-  .then(response => response.text()) // Get the text content
-  .then(data => {
-    // Insert the text into the #about-text div
-    document.getElementById('about-text').innerText = data;
-  })
-  .catch(error => console.error('Error fetching About Me content:', error));
+// Function to load the static content from about.txt and expandable content from about-readmore.txt
+function loadAboutText() {
+  // Fetch the static content from about.txt
+  fetch('about.txt')
+    .then(response => response.text())  // Parse the file as text
+    .then(staticContent => {
+      // Set the static content in the about section
+      const staticTextElement = document.getElementById("static-text");
+      staticTextElement.innerHTML = staticContent;
+    })
+    .catch(error => console.error("Error loading static text:", error));
 
+  // Fetch the expandable content from about-readmore.txt
+  fetch('about-readmore.txt')
+    .then(response => response.text())  // Parse the file as text
+    .then(expandableContent => {
+      const moreTextElement = document.getElementById("more-text");
+      moreTextElement.innerHTML = expandableContent;  // Set the full content hidden initially
+    })
+    .catch(error => console.error("Error loading expandable text:", error));
+}
 
-// Expand About Me section
+// Toggle the visibility of the extra text
 function toggleText() {
   const moreText = document.getElementById("more-text");
   const btn = document.getElementById("read-more-btn");
@@ -36,3 +48,6 @@ function toggleText() {
     btn.innerHTML = "Read More";
   }
 }
+
+// Load the content when the page is loaded
+window.onload = loadAboutText;
