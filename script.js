@@ -22,3 +22,17 @@ fetch('about.txt')
   })
   .catch(error => console.error('Error fetching About Me content:', error));
 
+
+// Expand About Me section
+function toggleText() {
+  const moreText = document.getElementById("more-text");
+  const btn = document.getElementById("read-more-btn");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    btn.innerHTML = "Read Less";
+  } else {
+    moreText.style.display = "none";
+    btn.innerHTML = "Read More";
+  }
+}
