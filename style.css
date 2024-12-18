@@ -1,39 +1,23 @@
 /* General Styling */
+:root {
+  --deep-blue: #4335A7;
+  --light-cream: #FFF6E9;
+  --orange: #FF7F3E;
+  --light-blue: #80C4E9;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background: #FFF6E9; /* Light Cream Background */
-  color: #4335A7; /* Deep Blue Text */
+  background: var(--light-cream);
+  color: var(--deep-blue);
 }
 
-header h1 {
-  font-size: 2.5em;
-  margin: 0.5em 0;
-  color: #FFF6E9; /* Deep Blue */
-  text-shadow: 2px 2px 4px #4335A7; /* Light Cream Shadow */
-}
-
-h2 {
-  font-weight: 600;
-  color: #4335A7; /* Deep Blue */
-}
-
-a {
-  color: #FF7F3E; /* Orange Links */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #4335A7; /* Deep Blue on Hover */
-  text-decoration: underline;
-}
-
-/* Header Styling */
 header {
-  background: linear-gradient(135deg, #4335A7, #80C4E9); /* Deep Blue to Light Blue */
-  color: #FFF6E9; /* Light Cream Text */
+  background: linear-gradient(135deg, var(--deep-blue), var(--light-blue));
+  color: var(--light-cream);
   padding: 2em 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,14 +26,31 @@ header {
 header h1 {
   font-size: 2.5em;
   margin: 0.5em 0;
+  color: var(--light-cream);
+  text-shadow: 2px 2px 4px var(--deep-blue);
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--deep-blue);
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--deep-blue);
+  text-decoration: underline;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
   margin: 1em 0 0 0;
-  display: flex; /* Use flex to make the items appear side by side */
-  justify-content: center; /* Centers the items horizontally */
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -58,13 +59,15 @@ header nav ul li {
 
 header nav ul li a {
   font-size: 1.2em;
-  color: #FFF6E9; /* Light Cream Links */
+  color: var(--light-cream);
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #FF7F3E; /* Orange on Hover */
+  color: var(--orange);
 }
+
+
 
 /* Section Styling */
 section {
