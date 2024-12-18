@@ -3,14 +3,15 @@ const toggleButton = document.getElementById('toggleButton');
 const message = document.getElementById('message');
 
 // Add a click event listener to the button
-toggleButton.addEventListener('click', () => {
-  // Toggle the message visibility
-  if (message.style.display === 'none' || message.style.display === '') {
-    message.style.display = 'block'; // Show the message
-  } else {
-    message.style.display = 'none'; // Hide the message
-  }
-});
+if (toggleButton && message) {
+  toggleButton.addEventListener('click', () => {
+    if (message.style.display === 'none' || message.style.display === '') {
+      message.style.display = 'block';
+    } else {
+      message.style.display = 'none';
+    }
+  });
+}
 
 
 // Function to load content from a file and display it in a specific element
@@ -23,17 +24,6 @@ function loadContent(file, elementId) {
     .catch(error => console.error('Error loading the file:', error));
 }
 
-// Function to load content from a file and display it in a specific element
-function loadContent(file, elementId) {
-  fetch(file)
-    .then(response => response.text())
-    .then(data => {
-      // Convert newlines to <br> for HTML formatting
-      const formattedData = data.replace(/\n/g, '<br>');
-      document.getElementById(elementId).innerHTML = formattedData;
-    })
-    .catch(error => console.error('Error loading the file:', error));
-}
 // Load content for both About Me and Projects sections when the page is loaded
 window.onload = function() {
   // About Me section
@@ -46,24 +36,16 @@ window.onload = function() {
 };
 
 // Toggle Read More functionality for both About Me and Projects sections
-document.getElementById('read-more-about-btn').addEventListener('click', function() {
-  var moreText = document.getElementById('more-about-text');
-  if (moreText.style.display === 'none') {
-    moreText.style.display = 'block';
-    this.textContent = 'Read Less';
-  } else {
-    moreText.style.display = 'none';
-    this.textContent = 'Read More';
-  }
-});
-
-document.getElementById('read-more-projects-btn').addEventListener('click', function() {
-  var moreText = document.getElementById('more-projects-text');
-  if (moreText.style.display === 'none') {
-    moreText.style.display = 'block';
-    this.textContent = 'Read Less';
-  } else {
-    moreText.style.display = 'none';
-    this.textContent = 'Read More';
-  }
-});
+const readMoreAboutBtn = document.getElementById('read-more-about-btn');
+if (readMoreAboutBtn) {
+  readMoreAboutBtn.addEventListener('click', function() {
+    var moreText = document.getElementById('more-about-text');
+    if (moreText.style.display === 'none') {
+      moreText.style.display = 'block';
+      this.textContent = 'Read Less';
+    } else {
+      moreText.style.display = 'none';
+      this.textContent = 'Read More';
+    }
+  });
+}
