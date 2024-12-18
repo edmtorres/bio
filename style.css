@@ -11,7 +11,8 @@ body {
 header h1 {
   font-size: 2.5em;
   margin: 0.5em 0;
-  text-shadow: 2px 2px 4px #4335A7; /* Add shadow for more contrast */
+  color: #4335A7; /* Deep Blue */
+  text-shadow: 2px 2px 4px #FFF6E9; /* Light Cream Shadow */
 }
 
 h2 {
