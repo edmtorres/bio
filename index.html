@@ -1,97 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of Edmundo Torres-Gonz&aacute;lez, Bioinformatics & Genomics PhD student">
-    <meta name="keywords" content="Edmundo Torres-Gonz&aacute;lez, Bioinformatics, Genomics, PhD, Research, Projects">
-    <meta name="author" content="Edmundo Torres-Gonz&aacute;lez">
-    <meta property="og:title" content="Edmundo Torres-Gonz&aacute;lez">
-    <meta property="og:description" content="Official website of Edmundo Torres-Gonz&aacute;lez">
-    <meta property="og:image" content="images/profile.jpg">
-    <title>Edmundo Torres-Gonz&aacute;lez</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edmundo Torres-Gonz&aacute;lez</title>
 
-    <!-- Navigation Section -->
-    <nav role="navigation">
-        <div class="logo">
-            <h1>Website for Edmundo Torres-Gonz&aacute;lez</h1>
-        </div>
-        <div class="menu-icon" id="menu-icon" aria-label="Toggle navigation menu">
-            &#9776;
-        </div>
-        <ul class="nav-list" id="nav-list" role="menu">
-            <li><a href="#about" role="menuitem">About Me</a></li>
-            <li><a href="#projects" role="menuitem">Projects</a></li>
-            <li><a href="#contact" role="menuitem">Contact</a></li>
-            <li><a href="https://docs.google.com/document/d/1v86IgbMIuBA0ej2XB9Kh6DA_ZVuNx_j-mG6T8q-3UhM/export?format=pdf" target="_blank" download="Edmundo_Torres-González_CV.pdf" role="menuitem">CV</a></li>
+
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+
+  <header>
+  <nav>
+    <div class="logo">
+      <h1>Website for Edmundo Torres-Gonz&aacute;lez</h1>
+    </div>
+    <div class="menu-icon" id="menu-icon">
+      &#9776; <!-- Hamburger icon -->
+    </div>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://docs.google.com/document/d/1v86IgbMIuBA0ej2XB9Kh6DA_ZVuNx_j-mG6T8q-3UhM/export?format=pdf" target="_blank" download="Edmundo_Torres-González_CV.pdf">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<img src="images/profile.jpg" alt="Edmundo Torres-González" id="profile-pic">
+
+
+<section id="about-me">
+  <h2>About Me</h2>
+
+  <p id="about-text"></p> <!-- This will load content from about.txt -->
+
+  <button id="read-more-about-btn">Read More</button>
+  
+  <div id="more-about-text" style="display:none;">
+    <div id="read-more-container">
+      <p id="about-more-text"></p> <!-- This will load content from about-readmore.txt -->
+      <!-- <img id="read-more-img-about" src="images/smbe2023.jpg" alt="Read more image"> -->
+      <img id="read-more-img-about" src="images/uprr-workshop.jpg" alt="Read more image">
+    </div>
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <p id="projects-text"></p> <!-- This will load content from project.txt -->
+
+  <button id="read-more-projects-btn">Read More</button>
+
+  <div id="more-projects-text" style="display:none;">
+    <div id="read-more-container">
+      <p id="projects-more-text"></p> <!-- This will load content from project-more.txt -->
+      <img id="read-more-img-about" src="images/smbe2023.jpg" alt="Read more image">
+      <img id="read-more-img-projects" src="images/smbe2024.jpg" alt="Read more image">
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>For a complete list of my academic publications, visit my <a href="https://scholar.google.com/citations?user=VARv-L4AAAAJ" target="_blank">Google Scholar profile</a>.</p>
+    <p>Check out my projects on <a href="https://github.com/edmtorres" target="_blank">GitHub</a>.</p>
+    <div class="social-media">
+      <a href="https://scholar.google.com/citations?user=VARv-L4AAAAJ" target="_blank">
+            <img src="images/scholar-icon.png" alt="Google Scholar" />
+        </a>
+        <a href="https://github.com/edmtorres" target="_blank">
+            <img src="images/github-icon.png" alt="Github" />
+        </a>
+        <a href="https://orcid.org/0000-0001-8844-2855" target="_blank">
+            <img src="images/orcid-icon.png" alt="ORCID" />
+        </a>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p> You can reach me on the following platforms:<p>
+    <div class="social-media">
+        <a href="mailto:edmundotogo@gmail.com">
+            <img src="images/gmail-icon.png" alt="Mail" />
+        </a>
+        <a href="https://x.com/edmundotogo" target="_blank">
+            <img src="images/twitter-icon.png" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/edmundotogo/" target="_blank">
+            <img src="images/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+    </div>
+  </section>
+
+
+
+
+  <!-- Click me button and message -->
+  <button id="toggleButton">Click Me</button>
+  <div id="message" style="display: none;">
+    <p>Have a surprisingly great day! :)</p>
+  </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>&copy; 2024 Edmundo Torres-Gonz&aacute;lez</p>
+        <!-- <p>Bioinformatics & Genomics PhD Student</p> -->
+      </div>
+      <div class="footer-center">
+        <ul>
+          <li><a href="mailto:edmundo@example.com">Email</a></li>
+          <li><a href="https://x.com/edmundotogo" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/edmundotogo" target="_blank">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=youruserid" target="_blank">Google Scholar</a></li>
+          <li><a href="https://github.com/edmtorres" target="_blank">Github</a></li>
+          <li><a href="https://orcid.org/0000-0001-8844-2855" target="_blank">ORCID</a></li>
         </ul>
-    </nav>
+      </div>
+      <div class="footer-right">
+        <p>Connect with me for collaborations, research, and more!</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="profile">
-            <img src="images/profile.jpg" alt="Edmundo Torres-Gonz&aacute;lez Profile Picture" id="profile-pic">
-            <div class="bio">
-                <p>I am a Bioinformatics & Genomics PhD student in the Makova Lab.</p>
-                <button id="read-more-about-btn" aria-expanded="false">Read More</button>
-                <div id="more-about-text" style="display:none;">
-                    <!-- Content loaded dynamically -->
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="projects-text">
-            <!-- Content loaded dynamically -->
-        </div>
-        <button id="read-more-projects-btn" aria-expanded="false">Read More</button>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: edmundo@example.com</p>
-            <p>Twitter: <a href="https://x.com/edmundotogo" target="_blank">edmundotogo</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/edmundotogo" target="_blank">Edmundo Torres-Gonz&aacute;lez</a></p>
-        </div>
-        <div class="social-media">
-            <a href="https://github.com/edmtorres" target="_blank"><img src="images/github-icon.png" alt="Github"></a>
-            <a href="https://orcid.org/0000-0001-8844-2855" target="_blank"><img src="images/orcid-icon.png" alt="ORCID"></a>
-            <a href="https://scholar.google.com/citations?user=youruserid" target="_blank"><img src="images/scholar-icon.png" alt="Google Scholar"></a>
-        </div>
-    </section>
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p>&copy; 2024 Edmundo Torres-Gonz&aacute;lez</p>
-            </div>
-            <div class="footer-center">
-                <h3>Contact</h3>
-                <ul>
-                    <li><a href="mailto:edmundo@example.com">Email</a></li>
-                    <li><a href="https://x.com/edmundotogo" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/in/edmundotogo" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=youruserid" target="_blank">Google Scholar</a></li>
-                    <li><a href="https://github.com/edmtorres" target="_blank">Github</a></li>
-                    <li><a href="https://orcid.org/0000-0001-8844-2855" target="_blank">ORCID</a></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <p>Connect with me for collaborations, research, and more!</p>
-            </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
+
