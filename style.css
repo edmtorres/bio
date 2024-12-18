@@ -136,6 +136,24 @@ section p {
   text-align: justify;
 }
 
+/* Apply body styles to About Me section */
+#about-text, #about-more-text {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  color: var(--deep-blue); /* Ensure the text color is consistent */
+  font-size: 1.1em; /* Same font size as general text */
+  text-align: justify; /* Justify text alignment as specified */
+  margin: 10px 0;
+}
+
+/* If there's a specific class for the About Me section title */
+#about-text h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #4335A7;
+  display: inline-block;
+}
+
 /* Footer Styling */
 footer {
   background-color: #4335A7;
