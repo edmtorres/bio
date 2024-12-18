@@ -113,7 +113,7 @@ section {
   padding: 30px 20px;
   margin: 20px auto;
   max-width: 900px;
-  background: var(--light-cream);
+  background: #FFF6E9;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
@@ -121,7 +121,7 @@ section {
 section h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  border-bottom: 3px solid var(--deep-blue);
+  border-bottom: 3px solid #4335A7;
   display: inline-block;
 }
 
@@ -131,8 +131,9 @@ section p {
   line-height: 1.8;
 }
 
+
 /* Apply body styles to About Me and Projects sections */
-#about-text, #projects-text, #about-more-text, #projects-more-text {
+about-text, #projects-text, #about-more-text, #projects-more-text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   color: var(--deep-blue); /* Ensure the text color is consistent */
@@ -141,10 +142,18 @@ section p {
   margin: 10px 0;
 }
 
+/* If there's a specific class for the About Me section title */
+#about-text h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #4335A7;
+  display: inline-block;
+}
+
 /* Footer Styling */
 footer {
-  background-color: var(--deep-blue);
-  color: var(--light-cream);
+  background-color: #4335A7;
+  color: #FFF6E9;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -173,13 +182,13 @@ ul li {
 }
 
 ul li a {
-  color: var(--light-cream);
+  color: #FFF6E9;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 ul li a:hover {
-  color: var(--orange);
+  color: #FF7F3E;
 }
 
 .footer-left {
@@ -213,8 +222,8 @@ ul li a:hover {
 
 /* Button Styling */
 button {
-  background: var(--orange);
-  color: var(--light-cream);
+  background: #FF7F3E;
+  color: #FFF6E9;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -224,7 +233,7 @@ button {
 }
 
 button:hover {
-  background: var(--deep-blue);
+  background: #4335A7;
 }
 
 @media (max-width: 768px) {
@@ -245,7 +254,7 @@ button:hover {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 5px solid var(--deep-blue);
+  border: 5px solid #4335A7;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: block;
   margin: 10px auto;
@@ -254,16 +263,16 @@ button:hover {
 #publications {
   margin-top: 30px;
   padding: 20px;
-  background-color: var(--light-cream);
+  background-color: #FFF6E9;
   border-radius: 8px;
 }
 
 #publications h2 {
-  color: var(--deep-blue);
+  color: #4335A7;
 }
 
 #publications a {
-  color: var(--orange);
+  color: #FF7F3E;
   text-decoration: none;
 }
 
@@ -272,7 +281,7 @@ button:hover {
 }
 
 #read-more-btn {
-  background-color: var(--deep-blue);
+  background-color: #4335A7;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -283,7 +292,7 @@ button:hover {
 }
 
 #read-more-btn:hover {
-  background-color: var(--light-blue);
+  background-color: #80C4E9;
 }
 
 #more-text {
@@ -304,45 +313,4 @@ button:hover {
 .social-media img {
   width: 100px;
   height: auto;
-}
-
-/* Container for text and image */
-#read-more-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px; /* Space between the text and the image */
-  margin-top: 20px;
-}
-
-/* Style for the image in the Read More section */
-#read-more-img-about, #read-more-img-projects {
-  width: 40%; /* Adjust the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 400px; /* Optional: max width */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
-}
-
-/* Style for the more text */
-#about-more-text, #projects-more-text {
-  font-size: 1.2em;
-  line-height: 1.8;
-  flex: 1; /* Allow text to take remaining space */
-}
-
-/* Optional: Style the Read More button for better interaction */
-#read-more-about-btn, #read-more-projects-btn {
-  background-color: var(--deep-blue);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-  transition: background-color 0.3s;
-}
-
-#read-more-about-btn:hover, #read-more-projects-btn:hover {
-  background-color: var(--light-blue);
 }
