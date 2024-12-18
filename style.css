@@ -248,7 +248,8 @@ button:hover {
 
 .social-media {
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically center the icons */
+  justify-content: center; /* Horizontally center the icons */
   gap: 10px; /* Space between the icons */
 }
 
