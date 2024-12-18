@@ -243,15 +243,20 @@ button:hover {
 }
 
 
-#contact a img {
-  width: 60px; /* Adjust the width of the icons */
-  height: 60px; /* Maintain aspect ratio by setting the height */
-  margin-right: 10px; /* Add some space between the icons */
-  transition: transform 0.3s ease; /* Optional: Add a hover effect */
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icons */
 }
 
-#contact a img:hover {
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+.social-media a {
+    display: inline-block;
 }
+
+.social-media img {
+    width: 60px; /* Set a smaller size for the icons */
+    height: auto;
+}
+
 
 
