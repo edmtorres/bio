@@ -326,6 +326,8 @@ button:hover {
   max-width: 850px; /* Adjust the width as per your design */
   cursor: pointer; /* Make it clear it's clickable */
   transition: transform 0.3s ease; /* Optional: Add a hover effect */
+  display: inline-block; /* Make images inline-block to place them side by side */
+  margin-right: 10px; /* Add some space between the images */
 }
 
 .read-more-img:hover {
