@@ -35,17 +35,18 @@ window.onload = function() {
   loadContent('text/project-readmore.txt', 'projects-more-text');
 };
 
-// // Toggle Read More functionality for both About Me and Projects sections
-// document.getElementById('read-more-about-btn').addEventListener('click', function() {
-//   var moreText = document.getElementById('more-about-text');
-//   if (moreText.style.display === 'none') {
-//     moreText.style.display = 'block';
-//     this.textContent = 'Read Less';
-//   } else {
-//     moreText.style.display = 'none';
-//     this.textContent = 'Read More';
-//   }
-// });
+
+// Toggle Read More functionality for both About Me and Projects sections
+document.getElementById('read-more-about-btn').addEventListener('click', function() {
+  var moreText = document.getElementById('more-about-text');
+  if (moreText.style.display === 'none') {
+    moreText.style.display = 'block';
+    this.textContent = 'Read Less';
+  } else {
+    moreText.style.display = 'none';
+    this.textContent = 'Read More';
+  }
+});
 
 document.getElementById('read-more-projects-btn').addEventListener('click', function() {
   var moreText = document.getElementById('more-projects-text');
@@ -57,17 +58,3 @@ document.getElementById('read-more-projects-btn').addEventListener('click', func
     this.textContent = 'Read More';
   }
 });
-
-
-document.getElementById('read-more-projects-btn').addEventListener('click', function() {
-  document.getElementById('more-projects-text').style.display = 'block';
-  document.getElementById('read-more-projects-btn').style.display = 'none';
-  document.getElementById('read-less-projects-btn').style.display = 'inline-block';
-});
-
-document.getElementById('read-less-projects-btn').addEventListener('click', function() {
-  document.getElementById('more-projects-text').style.display = 'none';
-  document.getElementById('read-more-projects-btn').style.display = 'inline-block';
-  document.getElementById('read-less-projects-btn').style.display = 'none';
-});
-
