@@ -85,6 +85,7 @@
         <a href="https://orcid.org/0000-0001-8844-2855" target="_blank">
             <img src="images/orcid-icon.png" alt="ORCID" />
         </a>
+      </div>
   </section>
 
 
@@ -152,9 +153,10 @@
       const menuIcon = document.querySelector('.menu-icon'); // Get the menu icon
       const navMenu = document.querySelector('header nav ul'); // Get the navigation menu
 
-      // Add a click event listener to the menu icon
-      menuIcon.addEventListener('click', function() {
-        navMenu.classList.toggle('active'); // Toggle the 'active' class on the nav menu
+      // Only add the event listener if the menu icon actually exists on the page
+      if (menuIcon && navMenu) {
+        menuIcon.addEventListener('click', function() {
+          navMenu.classList.toggle('active');
       });
     });
   </script>
