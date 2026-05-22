@@ -1,2 +1,1 @@
-Welcome! My name is Edmundo Torres-González, and I am a PhD student in Bioinformatics and Genomics at the Makova Lab, Pennsylvania State University. My research explores the complexities of genomic data through an evolutionary genomics lens, focusing on humans and non-human primates.
-
+Welcome! My name is Edmundo Torres-González, and I a postdoctoral researcher that loves genetics. I earned my PhD in Bioinformatics and Genomics from Pennsylvania State University in the Makova Lab. My research explores the complexities of genomic data through an evolutionary genomics lens, focusing on humans, non-human primates, and more.
