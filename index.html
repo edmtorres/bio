@@ -147,7 +147,7 @@
   <!-- Link to JavaScript file -->
   <script src="script.js"></script>
 
-  <script>
+<script>
     // Wait for the document to be fully loaded
     document.addEventListener('DOMContentLoaded', function() {
       const menuIcon = document.querySelector('.menu-icon'); // Get the menu icon
@@ -157,7 +157,8 @@
       if (menuIcon && navMenu) {
         menuIcon.addEventListener('click', function() {
           navMenu.classList.toggle('active');
-      });
+        }); // Correctly closed the click function block
+      }
     });
   </script>
 
